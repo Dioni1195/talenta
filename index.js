@@ -58,13 +58,12 @@ async function runAPI() {
                     //response['planets'] = searchPlanets(film['planets'])
                     response.push({name: filName, planets: planets, people: people, starships: starships})
                 }
-
+                console.log(response)
             });
 
             }).on("error", (err) => {
             console.log("Error: " + err.message);
             });
-
 
 }
 
