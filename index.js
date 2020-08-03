@@ -55,8 +55,8 @@ async function runAPI() {
                     people = film['characters'];
                     starships =film['starships'];
 
-                    response['planets'] = searchPlanets(film['planets'])
-                    response.push({name: filName, people: people, starships: starships})
+                    //response['planets'] = searchPlanets(film['planets'])
+                    response.push({name: filName, planets: planets, people: people, starships: starships})
                 }
 
             });
